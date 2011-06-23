@@ -1,0 +1,5 @@
+Dear <%= @order.name %>
+
+Your order has shipped.
+
+<%= render @order.line_items %>
