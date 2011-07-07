@@ -1,4 +1,6 @@
 Depot::Application.routes.draw do
+  resources :posts
+
   get "pages/faq"
 
   get "pages/contact"
