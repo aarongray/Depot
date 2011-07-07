@@ -25,7 +25,7 @@
 }
 
 #columns {
-	background #141;
+	background: #4D320D;
 }
 
 #main {
@@ -41,7 +41,7 @@
 	padding-left: 1em;
 	padding-bottom: 1em;
 	width: 16em;
-	background: #141;
+	background: #4D320D;
 }
 
 #side a {
@@ -50,11 +50,14 @@
 }
 
 #store h1 {
-        font:  150% sans-serif;
-        color: #226;
-        border-bottom: 3px dotted #77d;
+  font:  150% sans-serif;
+  color: #226;
+  border-bottom: 3px dotted #77d;
 }
 
+#store h2 {
+  color: #FFFFFF;
+}
 
 /* Styles for the cart in the main page */
 

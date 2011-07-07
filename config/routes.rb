@@ -1,4 +1,8 @@
 Depot::Application.routes.draw do
+  get "pages/faq"
+
+  get "pages/contact"
+
   # /admin redirects to admin.index
   get 'admin' => 'admin#index'
 

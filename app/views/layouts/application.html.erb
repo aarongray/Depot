@@ -10,7 +10,7 @@
 <body id="store">
 	
 	<div id="banner">
-		<%= image_tag("logo.png") %>
+    <a href="/"><%= image_tag("logo.png") %></a>
 		<%= @page_title || "Pragmatic Bookshelf" %>
 	</div>
 	<div id="columns">
@@ -21,11 +21,18 @@
 							<%= render @cart %>
 						<% end %>
 					<% end %>
-				</div>
-			<a href="http://www....">Home</a><br />
-			<a href="http://www..../faq">Questions</a><br />
-			<a href="http://www..../news">News</a><br />
-			<a href="http://www..../contact">Contact</a><br />
+        </div>
+      <h2>Admin</h2>
+      <a href="/admin">Dashboard</a><br />
+      <a href="/users">Users</a><br />
+      <a href="/products">Products</a><br />
+      <a href="/orders">Orders</a><br />
+      <a href="/line_items">Line Items</a><br />
+      <a href="/carts">Carts</a><br />
+      <h2>Navigation</h2>
+      <a href="/pages/faq">Questions</a><br />
+			<a href="/news">News</a><br />
+			<a href="/pages/contact">Contact</a><br />
 
 		</div>
 		<div id="main">
