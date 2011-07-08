@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   
   # checks to be sure that name is present and unique in the database
   validates :name, :presence => true, :uniqueness => true
-  
+  has_many :posts, :foreign_key => "user_id", :dependent => :destroy
   #                        be sure that the 2 password fields match each other
   validates     :password, :confirmation => true
   

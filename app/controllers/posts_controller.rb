@@ -1,4 +1,9 @@
 class PostsController < ApplicationController
+  # Add in make resourceful and then activate this.
+  #before :create do
+  #  assign_user_id_to_post
+  #end
+  
   # GET /posts
   # GET /posts.xml
   def index
@@ -79,5 +84,11 @@ class PostsController < ApplicationController
       format.html { redirect_to(posts_url) }
       format.xml  { head :ok }
     end
+  end
+
+  # set the id of the currently logged in user as the author of any
+  # posts they create.
+  def assign_user_id_to_post
+   Post.find(params[:id]).user_id == session[:user_id]
   end
 end
